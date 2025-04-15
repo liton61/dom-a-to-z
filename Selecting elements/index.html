@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Selectors Example</title>
+  </head>
+  <body>
+    <h2 id="title">1. getElementById</h2>
+
+    <div class="box">2. getElementsByClassName - Box 1</div>
+    <div class="box">2. getElementsByClassName - Box 2</div>
+
+    <p>3. getElementsByTagName - Paragraph 1</p>
+    <p>3. getElementsByTagName - Paragraph 2</p>
+
+    <span class="highlight">4. querySelector (first .highlight)</span>
+    <span class="highlight">4. querySelectorAll - All .highlight</span>
+
+    <script>
+      // 1. getElementById
+      const title = document.getElementById("title");
+      console.log("getElementById:", title.innerText);
+
+      // 2. getElementsByClassName
+      const boxes = document.getElementsByClassName("box");
+      console.log("getElementsByClassName:");
+      console.log(boxes[0].innerText);
+      console.log(boxes[1].innerText);
+
+      // 3. getElementsByTagName
+      const paragraphs = document.getElementsByTagName("p");
+      console.log("getElementsByTagName:");
+      console.log(paragraphs[0].innerText);
+      console.log(paragraphs[1].innerText);
+
+      // 4. querySelector
+      const firstHighlight = document.querySelector(".highlight");
+      console.log("querySelector:", firstHighlight.innerText);
+
+      // 5. querySelectorAll
+      const allHighlights = document.querySelectorAll(".highlight");
+      console.log("querySelectorAll:");
+      for (const highlights of allHighlights) {
+        console.log(highlights);
+      }
+    </script>
+  </body>
+</html>
