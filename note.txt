@@ -1,0 +1,173 @@
+✅ 1. Introduction to DOM
+What is the DOM?
+
+DOM Tree structure (Document → Elements → Nodes)
+
+Node vs Element vs Attribute vs Text
+
+✅ 2. Accessing DOM Elements
+📌 Selectors:
+document.getElementById()
+
+document.getElementsByClassName()
+
+document.getElementsByTagName()
+
+document.querySelector()
+
+document.querySelectorAll()
+
+✅ 3. DOM Properties & Methods
+📌 Common Properties:
+.innerHTML
+
+.innerText
+
+.textContent
+
+.value
+
+.src, .href, .alt
+
+.className, .id
+
+.style
+
+📌 Methods:
+.setAttribute()
+
+.getAttribute()
+
+.removeAttribute()
+
+.hasAttribute()
+
+✅ 4. Traversing the DOM
+.parentNode, .parentElement
+
+.childNodes, .children
+
+.firstChild, .firstElementChild
+
+.lastChild, .lastElementChild
+
+.nextSibling, .nextElementSibling
+
+.previousSibling, .previousElementSibling
+
+✅ 5. Creating & Modifying Elements
+document.createElement()
+
+document.createTextNode()
+
+element.appendChild()
+
+element.append()
+
+element.prepend()
+
+element.insertBefore()
+
+element.removeChild()
+
+element.replaceChild()
+
+element.cloneNode()
+
+✅ 6. Working with Classes
+element.classList.add()
+
+element.classList.remove()
+
+element.classList.toggle()
+
+element.classList.contains()
+
+element.classList.replace()
+
+✅ 7. Styling Elements
+element.style.property = value
+
+Setting multiple styles using .style.cssText
+
+Reading computed styles with getComputedStyle()
+
+✅ 8. DOM Events
+📌 Adding Events:
+element.addEventListener('event', function)
+
+element.removeEventListener()
+
+📌 Common Events:
+Mouse: click, dblclick, mouseenter, mouseleave, mousemove
+
+Keyboard: keydown, keyup, keypress
+
+Form: submit, change, input, focus, blur
+
+Window: load, resize, scroll
+
+✅ 9. Event Object
+event.target
+
+event.currentTarget
+
+event.preventDefault()
+
+event.stopPropagation()
+
+✅ 10. Event Delegation
+Using bubbling to handle events efficiently
+
+Attach listener to parent element and use event.target for specific child
+
+✅ 11. Forms & Input Handling
+Accessing input values: input.value, textarea.value
+
+Form submission: form.addEventListener('submit')
+
+Validating form data
+
+preventDefault() to stop page refresh
+
+✅ 12. DOM Content Loaded
+document.addEventListener("DOMContentLoaded", callback)
+
+✅ 13. Mutation Observer (Advanced)
+Observing DOM changes dynamically
+
+new MutationObserver(callback)
+
+observer.observe(target, config)
+
+✅ 14. Shadow DOM (Advanced)
+element.attachShadow({mode: 'open'})
+
+shadowRoot.appendChild()
+
+✅ 15. HTML Templates
+<template> element
+
+Cloning template with content.cloneNode(true)
+
+✅ 16. Useful DOM Utilities
+document.createDocumentFragment()
+
+document.importNode()
+
+Node.nodeType
+
+Node.nodeName
+
+Node.nodeValue
+
+✅ 17. Best Practices
+Avoid innerHTML for untrusted content
+
+Use querySelector for flexibility
+
+Delegate events where possible
+
+Use classList for styling
+
+Avoid global variables in event handlers
